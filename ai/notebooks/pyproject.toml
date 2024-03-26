@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "build-on-frwc-notebooks"
+version = "0.1.0"
+description = ""
+authors = ["Forgotten <forgottenrunes@protonmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+python-dotenv = "^1.0.1"
+langchain = "^0.1.13"
+langserve = "^0.0.51"
+langgraph = "^0.0.30"
+httpx = "^0.27.0"
+fastapi = "^0.110.0"
+orjson = "^3.9.15"
+numpy = "^1.26.4"
+openai = "1.10.0"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+sse-starlette = "^1.3.0"
+httpx-sse = ">=0.3.1"
+langchain-community = "^0.0.29"
+tiktoken = "^0.6.0"
+faiss-cpu = "^1.8.0"
+requests = "^2.31.0"
+langchain-openai = "^0.1.1"
+pinecone-client = "^3.2.1"
+pinecone-text = "^0.9.0"
+lark = "^1.1.9"
+langchain-pinecone = "^0.0.3"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
