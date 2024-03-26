@@ -11,6 +11,7 @@
 ## Lore
 
 * [The Book of Lore Protocol](lore/the-book-of-lore-protocol.md)
+* [The Book of Lore API](lore/the-book-of-lore-api.md)
 * [Wizzypedia](lore/wizzypedia.md)
 
 ## AI
@@ -18,3 +19,7 @@
 * [Loracle](ai/loracle.md)
 * [Querying the Vector Database and RAG](ai/querying-the-vector-database-and-rag.md)
 * [Deep Dreammaster](ai/deep-dreammaster.md)
+
+## Smart Contracts
+
+* [Contract Addresses](smart-contracts/contract-addresses.md)
