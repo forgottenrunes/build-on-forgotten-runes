@@ -7,6 +7,7 @@
 * [2D Walkcycles and Spritesheets](characters/2d-walkcycles-and-spritesheets.md)
 * [3D Integrations Models and Rigs](characters/3d-integrations-models-and-rigs.md)
 * [Character Artwork API](characters/character-artwork-api.md)
+* [IP Rights - Commercial and Derivative Works](characters/ip-rights-commercial-and-derivative-works.md)
 
 ## Lore
 
