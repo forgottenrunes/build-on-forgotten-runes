@@ -9,9 +9,9 @@ coverY: 0
 
 ## 3D Models
 
-#### Commercial & Non-Commercial Rights
+Game-ready, rigged 3D models are available for every single Forgotten Runes Wizard and Forgotten Soul. You are free to integrate these models into your games and creations in both non-commercial and commercial works according to our [IP Rights](ip-rights-commercial-and-derivative-works.md).
 
-3D models are available for every single Forgotten Runes Wizard and Forgotten Soul. You are free to integrate these models into your games and creations according to our [Holder IP Rights](ip-rights-commercial-and-derivative-works.md).
+This means if you're creating a web2 or web3 game, you're free to integrate these 3D models.
 
 ### Formats
 
