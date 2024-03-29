@@ -1,0 +1,134 @@
+{
+  "definition": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Forgotten Runes Art API OpenAPI",
+      "version": "1.0.0",
+      "description": "Generates Art from the Forgotten Runes collections"
+    }
+  },
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Forgotten Runes Art API OpenAPI",
+    "version": "1.0.0",
+    "description": "Generates Art from the Forgotten Runes collections"
+  },
+  "apis": [
+    "./pages/api/art/**/*.tsx"
+  ],
+  "paths": {
+    "/api/art/lockscreen": {
+      "get": {
+        "summary": "Get lockscreen image buffer",
+        "description": "This API endpoint returns a lockscreen image buffer based on the provided parameters.",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "tokenSlug",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "The slug of the token"
+          },
+          {
+            "in": "query",
+            "name": "tokenId",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "The ID of the token"
+          },
+          {
+            "in": "query",
+            "name": "ridingTokenSlug",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "The slug of the riding token"
+          },
+          {
+            "in": "query",
+            "name": "ridingTokenId",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "The ID of the riding token"
+          },
+          {
+            "in": "query",
+            "name": "width",
+            "schema": {
+              "type": "integer"
+            },
+            "required": true,
+            "description": "The width of the image"
+          },
+          {
+            "in": "query",
+            "name": "height",
+            "schema": {
+              "type": "integer"
+            },
+            "required": true,
+            "description": "The height of the image"
+          },
+          {
+            "in": "query",
+            "name": "ratio",
+            "schema": {
+              "type": "integer"
+            },
+            "required": true,
+            "description": "The ratio of the image"
+          },
+          {
+            "in": "query",
+            "name": "device",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "The device for which the image is being generated. Defaults to \"iPhone 8\" if not provided."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The lockscreen image buffer",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error message and stack trace",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "stack": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {},
+  "tags": []
+}
