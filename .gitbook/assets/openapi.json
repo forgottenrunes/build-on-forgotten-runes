@@ -1,13 +1,11 @@
 {
-  "definition": {
-    "openapi": "3.0.0",
-    "info": {
-      "title": "Forgotten Runes Art API OpenAPI",
-      "version": "1.0.0",
-      "description": "Generates Art from the Forgotten Runes collections"
-    }
-  },
   "openapi": "3.0.0",
+  "servers": [
+    {
+      "url": "https://forgottenrunes.com",
+      "description": "Production server"
+    }
+  ],
   "info": {
     "title": "Forgotten Runes Art API OpenAPI",
     "version": "1.0.0",
@@ -26,16 +24,18 @@
             "in": "query",
             "name": "tokenSlug",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "default": "wizards"
             },
             "required": true,
-            "description": "The slug of the token"
+            "description": "The slug of the token."
           },
           {
             "in": "query",
             "name": "tokenId",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "default": "6044"
             },
             "required": true,
             "description": "The ID of the token"
@@ -99,7 +99,7 @@
           "200": {
             "description": "The lockscreen image buffer",
             "content": {
-              "application/octet-stream": {
+              "image/png": {
                 "schema": {
                   "type": "string",
                   "format": "binary"
