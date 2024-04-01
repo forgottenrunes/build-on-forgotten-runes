@@ -46,7 +46,7 @@
             "schema": {
               "type": "string"
             },
-            "required": true,
+            "required": false,
             "description": "The slug of the riding token"
           },
           {
@@ -55,7 +55,7 @@
             "schema": {
               "type": "string"
             },
-            "required": true,
+            "required": false,
             "description": "The ID of the riding token"
           },
           {
@@ -64,7 +64,7 @@
             "schema": {
               "type": "integer"
             },
-            "required": true,
+            "required": false,
             "description": "The width of the image"
           },
           {
@@ -73,7 +73,7 @@
             "schema": {
               "type": "integer"
             },
-            "required": true,
+            "required": false,
             "description": "The height of the image"
           },
           {
@@ -82,7 +82,7 @@
             "schema": {
               "type": "integer"
             },
-            "required": true,
+            "required": false,
             "description": "The ratio of the image"
           },
           {
