@@ -6,3 +6,4 @@ description: >-
 
 # Wizzypedia MCP
 
+[Read more here](https://github.com/cryppadotta/mcp-wizzypedia).
