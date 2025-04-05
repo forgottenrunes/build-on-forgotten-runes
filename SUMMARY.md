@@ -15,6 +15,10 @@
 * [The Book of Lore API](lore/the-book-of-lore-api.md)
 * [Wizzypedia](lore/wizzypedia.md)
 
+***
+
+* [Wizzypedia MCP](wizzypedia-mcp.md)
+
 ## AI
 
 * [Loracle](ai/loracle.md)
